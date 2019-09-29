@@ -9,7 +9,7 @@ export class ListComponent {
   @Input() aptList;
   @Output() deleteEvent = new EventEmitter();
 
-  handleDelete(theApt: object) {
+  handleDelete(theApt: object) {  // method/event
     console.log(theApt);
     this.deleteEvent.emit(theApt);
   }
