@@ -15,7 +15,8 @@
           ></app-search> 
           <app-list 
           [aptList]="modiefiedList"
-          (deleteEvent)="deleteApt($event)"> 
+          (deleteEvent)="deleteApt($event)"
+          (updateEvt)="updateApt($event)"> 
           </app-list>
         </div>
 
